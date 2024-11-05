@@ -5,3 +5,4 @@ fpdf
 google-generativeai
 requests
 zipfile36
+gunicorn
