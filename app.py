@@ -10,7 +10,7 @@ import requests
 import zipfile
 
 # Configure the Gemini API key
-genai.configure(api_key="AIzaSyBBrSYZT3Auwl6Nx3V29sbnzLo29UBDGrA")
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Constants for model handling
 MODEL_URL = "https://github.com/Kronos5675/Legal-Language-Generator/releases/download/v1.0/will_ner_model.zip"
