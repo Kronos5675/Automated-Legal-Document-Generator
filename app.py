@@ -14,7 +14,7 @@ genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Constants for model handling
 MODEL_URL = "https://github.com/Kronos5675/Legal-Language-Generator/releases/download/v1.0/will_ner_model.zip"
-MODEL_DIR = "will_ner_model"
+MODEL_DIR = "will_ner_model/will_ner_model"
 
 # Function to download and extract the model
 def download_model():
