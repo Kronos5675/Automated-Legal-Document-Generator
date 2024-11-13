@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bot_message_background"
+    android:padding="8dp"
+    android:layout_margin="8dp">
+
+    <!-- Document Icon -->
+    <ImageView
+        android:id="@+id/documentIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:src="@drawable/ic_pdf"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"/>
+
+    <!-- Document Name and Size -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/documentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generated Will.pdf"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/documentSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.5 KB · PDF"
+            android:textSize="12sp"
+            android:textColor="#A8A8A8"/>
+    </LinearLayout>
+
+    <!-- Download Button -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/downloadIcon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_download"
+        app:tint="#ffffff"
+        android:contentDescription="Download PDF"
+        android:layout_gravity="center_vertical"/>
+</LinearLayout>

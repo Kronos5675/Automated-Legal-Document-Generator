@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#171717">
+
+    <!-- Container for centering the welcome text and subtitle with added top margin -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|top"
+        android:layout_marginTop="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:text="LegalDocs!"
+            android:textColor="#00A290"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font2"/>
+
+        <TextView
+            android:layout_marginTop="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Legal Documents Instantly"
+            android:textColor="#00A290"
+            android:textSize="22sp"
+            android:fontFamily="@font/app_font"/>
+    </LinearLayout>
+
+    <!-- Blue iMessage-style bubble with LegalDoc Bot title and description (Message 1) -->
+    <LinearLayout
+        android:id="@+id/bubble1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bubble_blue"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <!-- Header TextView for "LegalDoc Bot" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:alpha="0.7"
+            android:text="LegalDoc Bot"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font2"/>
+
+        <!-- Description TextView with an ID for reference -->
+        <TextView
+            android:id="@+id/textViewMessage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to LegalDocs!"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/app_font"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Blue iMessage-style bubble with LegalDoc Bot description (Message 2) -->
+    <LinearLayout
+        android:id="@+id/bubble2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bubble_blue"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LegalDoc Bot"
+            android:layout_marginTop="-6dp"
+            android:alpha="0.7"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font2"/>
+
+        <TextView
+            android:id="@+id/textViewMessage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LegalDocs is a one stop shop for all your legal\ndocument requirements. Make legal documents with ease, wherever you want, whenever you want."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/app_font"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Blue iMessage-style bubble with LegalDoc Bot description (Message 3) -->
+    <LinearLayout
+        android:id="@+id/bubble3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="start"
+        android:background="@drawable/bubble_blue"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LegalDoc Bot"
+            android:layout_marginTop="-6dp"
+            android:alpha="0.7"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/app_font2"/>
+
+        <TextView
+            android:id="@+id/textViewMessage3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just type the information you want in the\ndocument and the ML model will generate\nyour legal document in minutes."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:fontFamily="@font/app_font"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <!-- Get Started Button aligned at the bottom -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Get Started   ᐉ"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#008D39"
+        android:textColor="#ffffff"
+        android:textSize="26dp"
+        android:fontFamily="@font/app_font2"
+        android:padding="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set background color -->
+    <solid android:color="#128C7E" /> <!-- WhatsApp-like green color -->
+
+    <!-- Set rounded corners -->
+    <corners android:radius="12dp" />
+
+    <!-- Optional: Add padding if needed -->
+    <padding
+        android:left="8dp"
+        android:right="8dp"
+        android:top="8dp"
+        android:bottom="8dp" />
+</shape>
