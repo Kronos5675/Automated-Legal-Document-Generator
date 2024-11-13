@@ -1,8 +1,0 @@
-Flask
-torch
-transformers
-fpdf
-google-generativeai
-requests
-zipfile36
-gunicorn
